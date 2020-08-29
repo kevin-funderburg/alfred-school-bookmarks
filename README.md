@@ -18,6 +18,8 @@ In this workflow, here's what I wanted to get to quickly for each class:
 So I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
 
 ```SQL
+-- you can change these columns to whatever
+-- information you would like
 
 CREATE TABLE "fall2020" (
 	"name"			TEXT NOT NULL,
@@ -60,13 +62,14 @@ INSERT INTO fall2020 VALUES (
 ![](imgs/db.png)
 
 After that, it's basic python code, all I did was assign each one of the things I cared about to a modifier key:
-- <kbd>⌘</kbd> = class website
-- <kbd>⌥</kbd> = browse class folder
-- <kbd>⇧</kbd> = open ebook
-- <kbd>⌃</kbd> = zoom meeting
-- no modifer = open OneNote section
 
-
+modifer  |  opens
+--|--
+ <kbd>⌘</kbd> |  class website
+ <kbd>⌥</kbd> |  browse class folder
+ <kbd>⇧</kbd> |  ebook
+ <kbd>⌃</kbd> |  zoom meeting
+ no modifer |  OneNote section
 
 
 So if you want to adapt this for yourself, adjust the `def execute_sql`function in the `getClassData.py` file for your information. Below points out where to make the change.
