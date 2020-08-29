@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.kevinfunderburg.schoolBookmarks</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15A79703-3A94-4D9B-BF85-5920FDCE4870</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A9BE27-70A6-459B-A1E3-251E63470E3A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0810AECF-5189-470C-9206-4BC8592EBFCE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2B6542D-D59E-433E-A0BD-AE8CDA3945B7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1E6BA73D-0568-4F8D-9C00-F3698F925AAA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15A79703-3A94-4D9B-BF85-5920FDCE4870</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A9BE27-70A6-459B-A1E3-251E63470E3A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1F750D0A-83EA-466C-89E1-DF98B394B943</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C3ADB47B-0C15-4743-8C18-4E8DBBAD9DEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>453D837F-D00B-4B67-928D-983AB3F8CF55</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1E44AC7-347D-4475-A322-FD230A64A3D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7338C517-72E7-4843-98F9-B898E1D3DA33</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9A84D6CF-E103-41C0-9A60-8B4C0C16E0AC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB1D621E-D86E-4CC2-B1A1-25700FEC087D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C3ADB47B-0C15-4743-8C18-4E8DBBAD9DEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D2B6542D-D59E-433E-A0BD-AE8CDA3945B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D7A9BE27-70A6-459B-A1E3-251E63470E3A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>453D837F-D00B-4B67-928D-983AB3F8CF55</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F750D0A-83EA-466C-89E1-DF98B394B943</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0810AECF-5189-470C-9206-4BC8592EBFCE</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A84D6CF-E103-41C0-9A60-8B4C0C16E0AC</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DF877373-6B9C-4F11-92BF-E70BD8270FEA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C3ADB47B-0C15-4743-8C18-4E8DBBAD9DEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1E44AC7-347D-4475-A322-FD230A64A3D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7338C517-72E7-4843-98F9-B898E1D3DA33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FB1D621E-D86E-4CC2-B1A1-25700FEC087D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Kevin Funderburg</string>
+	<key>description</key>
+	<string>Bookmarks for classes</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>School Bookmarks</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string>%20</string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F1E44AC7-347D-4475-A322-FD230A64A3D0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Microsoft OneNote.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>453D837F-D00B-4B67-928D-983AB3F8CF55</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+	set uid to "ADD1A27E-0E16-40A0-8E78-3C9039CA9AEF"	tell application "Keyboard Maestro"		set enabled of first macro group whose id is uid to false	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>15A79703-3A94-4D9B-BF85-5920FDCE4870</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>7338C517-72E7-4843-98F9-B898E1D3DA33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>use scripting additions
+
+on alfred_script(q)	if q begins with "http" then		tell application "Safari"			tell front window								set URLs to URL of every tab				set URLfound to false				set theURL to q								repeat with u in URLs					if u contains theURL then						set URLfound to true						set thetab to (first tab whose URL is u)						exit repeat					end if				end repeat								if URLfound is false then					open location theURL				else					set current tab to thetab				end if				activate			end tell		end tell
+	end if
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>1F750D0A-83EA-466C-89E1-DF98B394B943</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>C3ADB47B-0C15-4743-8C18-4E8DBBAD9DEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+	set uid to "ADD1A27E-0E16-40A0-8E78-3C9039CA9AEF"	tell application "Keyboard Maestro"		set enabled of first macro group whose id is uid to true	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>km</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>1E6BA73D-0568-4F8D-9C00-F3698F925AAA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>.school</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>python getClassData.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>placeholder</string>
+				<key>title</key>
+				<string>Open common school stuff</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D7A9BE27-70A6-459B-A1E3-251E63470E3A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	delay 1
+	-- ignoring application responses
+	tell application "Keyboard Maestro Engine"
+		do script "25E56F5C-A72D-4A62-975D-049B481FCFE6"
+		-- or: do script do script "25E56F5C-A72D-4A62-975D-049B481FCFE6" with parameter "Whatever"
+	end tell
+	-- end ignoring
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DF877373-6B9C-4F11-92BF-E70BD8270FEA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>0810AECF-5189-470C-9206-4BC8592EBFCE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>D2B6542D-D59E-433E-A0BD-AE8CDA3945B7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)	if q begins with "https" then		tell application "Safari"			tell front window								set URLs to URL of every tab				set URLfound to false				set theURL to q								repeat with u in URLs					if u contains theURL then						set URLfound to true						set thetab to (first tab whose URL is u)						exit repeat					end if				end repeat								if URLfound is false then					open location theURL				else					set current tab to thetab				end if				activate			end tell		end tell	else		if q begins with "~" then			set q to ((POSIX path of (path to home folder) &amp; characters 3 thru -1 of q) as POSIX file) as alias			tell application "Finder" to open q		end if	end ifend alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>9A84D6CF-E103-41C0-9A60-8B4C0C16E0AC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>FB1D621E-D86E-4CC2-B1A1-25700FEC087D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>0810AECF-5189-470C-9206-4BC8592EBFCE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>08261DA7-8592-4237-A5A5-4222FA2741BC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>enable KM macro group</string>
+			<key>xpos</key>
+			<integer>1020</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>15A79703-3A94-4D9B-BF85-5920FDCE4870</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>disable KM macro group</string>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>1E6BA73D-0568-4F8D-9C00-F3698F925AAA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>1F750D0A-83EA-466C-89E1-DF98B394B943</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
+		<key>453D837F-D00B-4B67-928D-983AB3F8CF55</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>7338C517-72E7-4843-98F9-B898E1D3DA33</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>9A84D6CF-E103-41C0-9A60-8B4C0C16E0AC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>410</integer>
+		</dict>
+		<key>C3ADB47B-0C15-4743-8C18-4E8DBBAD9DEF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>200</integer>
+		</dict>
+		<key>D2B6542D-D59E-433E-A0BD-AE8CDA3945B7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>320</integer>
+		</dict>
+		<key>D7A9BE27-70A6-459B-A1E3-251E63470E3A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>DF877373-6B9C-4F11-92BF-E70BD8270FEA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>1Password Autofill</string>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>F1E44AC7-347D-4475-A322-FD230A64A3D0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>FB1D621E-D86E-4CC2-B1A1-25700FEC087D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>440</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>none</string>
+</dict>
+</plist>
