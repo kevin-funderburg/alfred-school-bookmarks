@@ -51,6 +51,7 @@ def execute_sql(conn, sql):
         bookPath = row[2]
         oneNote = row[3]
         website = row[4]
+        zoom = row[5]
         it = wf.add_item(uid=name,
                          title=name,
                          subtitle="open OneNote section",
@@ -70,6 +71,10 @@ def execute_sql(conn, sql):
         it.add_modifier('shift',
                         subtitle=bookPath,
                         arg=bookPath,
+                        valid=True)
+        it.add_modifier('ctrl',
+                        subtitle="go to zoom meeting",
+                        arg=zoom,
                         valid=True)
 
 

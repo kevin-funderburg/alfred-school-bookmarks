@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>05B40E3B-7FED-4709-81AE-C73D3BC59642</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08261DA7-8592-4237-A5A5-4222FA2741BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</key>
 		<array>
 			<dict>
@@ -85,6 +98,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F1E44AC7-347D-4475-A322-FD230A64A3D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4B943A95-0B1D-4B4F-9E87-FF31B0FFE1FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05B40E3B-7FED-4709-81AE-C73D3BC59642</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -187,6 +213,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4B943A95-0B1D-4B4F-9E87-FF31B0FFE1FB</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>DF877373-6B9C-4F11-92BF-E70BD8270FEA</key>
 		<array>
@@ -275,6 +311,14 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>7338C517-72E7-4843-98F9-B898E1D3DA33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
@@ -311,11 +355,11 @@ end run</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>41</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>655360</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>;</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -329,14 +373,6 @@ end run</string>
 			<string>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>7338C517-72E7-4843-98F9-B898E1D3DA33</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -527,22 +563,88 @@ end run</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>use scripting additions
+
+on alfred_script(q)
+	if q begins with "http" then
+		tell application "Safari" 
+			open location q
+			activate
+		end tell
+
+		tell application "System Events"			tell process "Safari"
+				set failsafe to 0				repeat until button "Allow" of group 1 of tab group 1 of splitter group 1 of window 1 exists					delay 0.1					if failsafe = 300 then error "script timeout, can't find allow button"				end repeat				click button "Allow" of group 1 of tab group 1 of splitter group 1 of window 1
+			end tell
+		end tell
+			
+	else
+		set the clipboard to q
+		tell application "zoom.us"
+			activate
+			repeat until frontmost
+				delay 0.1
+			end repeat
+		end tell
+
+		tell application "System Events"
+			tell process "zoom.us"
+				keystroke "j" using {command down}
+				delay 1
+				keystroke "v" using {command down}
+				delay 0.5
+				keystroke return
+			end tell
+		end tell
+	end ifend alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>4B943A95-0B1D-4B4F-9E87-FF31B0FFE1FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>05B40E3B-7FED-4709-81AE-C73D3BC59642</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>05B40E3B-7FED-4709-81AE-C73D3BC59642</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>565</integer>
+		</dict>
 		<key>07F7F1EF-BB1B-4BD0-B57A-8EA6D18627C1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
 			<integer>50</integer>
+			<key>ypos</key>
+			<integer>105</integer>
 		</dict>
 		<key>0810AECF-5189-470C-9206-4BC8592EBFCE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
+			<key>note</key>
+			<string>browse in Alfred</string>
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>
@@ -568,12 +670,12 @@ end run</string>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>105</integer>
 		</dict>
 		<key>1E6BA73D-0568-4F8D-9C00-F3698F925AAA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>50</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -581,6 +683,8 @@ end run</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
+			<key>note</key>
+			<string>open website</string>
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>
@@ -595,6 +699,17 @@ end run</string>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
+		<key>4B943A95-0B1D-4B4F-9E87-FF31B0FFE1FB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>zoom meeting</string>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
 		<key>7338C517-72E7-4843-98F9-B898E1D3DA33</key>
 		<dict>
 			<key>colorindex</key>
@@ -608,6 +723,8 @@ end run</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
+			<key>note</key>
+			<string>open book</string>
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>

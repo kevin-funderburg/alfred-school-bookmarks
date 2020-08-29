@@ -4,12 +4,16 @@
 
 This is a little workflow I made to try and help navigate to all the websites, folders, books etc. that I use constantly throughout a semester. I am posting this as more of a demonstration seeing as what people want as a shortcut will vary for person to person, but if you want to use this is a very easy workflow to adapt.
 
+Here's what the workflow looks like itself:
+![](imgs/workflow.png)
+
 ## Configuration
 In this workflow, here's what I wanted to get to quickly for each class:
 1. Its folder
 2. Its ebook
 3. Its OneNote Page
 4. The class website
+5. the zoom meeting
 
 So I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
 
@@ -20,6 +24,7 @@ CREATE TABLE "fall2020" (
 	"bookPath"		TEXT,
 	"oneNote"		TEXT,
 	"website"		TEXT
+    "zoom"          TEXT
 );
 
 INSERT INTO fall2020 VALUES (
@@ -27,21 +32,24 @@ INSERT INTO fall2020 VALUES (
 	'~/Dropbox/School/algorithm design',
 	'~/Dropbox/School/algorithm design/Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein - Introduction to Algorithms 3rd Edition (2009).pdf',
     'onenote:https://d.docs.live.net/9478a1a4ec3795b7/somethingsomething',
-	'https://myclasswebsite1'
+	'https://myclasswebsite1',
+    'https://zoomurl'
 	);
 INSERT INTO fall2020 VALUES (
 	'Compilier Construction',
 	'~/Dropbox/School/compiler construction',
 	'~/Dropbox/School/compiler construction/Keith Cooper, Linda Torczon - Engineering a Compiler-Elsevier Science & Technology (2011).epub',
 	'onenote:https://d.docs.live.net/9478a1a4ec3795b7/somethingsomething',
-	'https://myclasswebsite2'
+	'https://myclasswebsite2',
+    'https://zoomurl'
 	);
 INSERT INTO fall2020 VALUES (
 	'Computer Networks',
 	'~/Dropbox/School/computer networks',
 	'~/Dropbox/School/algorithm design/Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein - Introduction to Algorithms 3rd Edition (2009).pdf',
     'onenote:https://d.docs.live.net/9478a1a4ec3795b7/somethingsomething',
-    'https://myclasswebsite2'
+    'https://myclasswebsite2',
+    'https://zoomurl'
 	);
 ```
 
@@ -53,7 +61,10 @@ After that, it's basic python code, all I did was assign each one of the things 
 - <kbd>⌘</kbd> = class website
 - <kbd>⌥</kbd> = browse class folder
 - <kbd>⇧</kbd> = open ebook
+- <kbd>⌃</kbd> = zoom meeting
 - no modifer = open OneOnte section
 
+
+
+
 So if you want to adapt this for yourself, look through the `getClassData.py` file and make the adjustments for yourself.
-    
