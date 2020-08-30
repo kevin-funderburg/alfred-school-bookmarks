@@ -4,10 +4,12 @@
 
 This little workflow was made to quickly and easily get to all the websites, folders, ebooks, zoom meetings  etc. that I need to access many times daily in school. It has turned out to be one of the most useful and highly used out of all my workflows so I wanted to share it, but since everyone is different I figured I would at least post the code and show how easily you could adjust it for yourself.
 
+> Because of this, this repo is more of a demonstration on building an Alfred workflow rather than sharing an executable workflow to be installed.
+
+_Here's a screenshot of the workflow itself:_
 
 ![](imgs/workflow.png)
 
-> Here's a screenshot of the workflow itself:
 
 ## Configuration
 In this workflow, here's what I wanted to get to quickly for each class:
