@@ -1,4 +1,4 @@
-![](imgs/demo.gif)
+![demo](imgs/demo.gif)
 
 # Alfred School Bookmarks
 
@@ -8,7 +8,7 @@ This little workflow was made to quickly and easily get to all the websites, fol
 
 _Here's a screenshot of the workflow itself:_
 
-![](imgs/workflow.png)
+![wholeworkflow](imgs/workflow.png)
 
 
 ## Configuration
@@ -73,7 +73,7 @@ INSERT INTO fall2020 VALUES (
 
 > Here's the result below (using DB Browser for SQLite)
 
-![](imgs/db.png)
+![db](imgs/db.png)
 
 Once the data is stored, you just need to make sure the `def execute_sql`function in the `getClassData.py` file fits your information. Below points out where to make the change.
 
@@ -115,5 +115,12 @@ def execute_sql(conn, sql):
                         arg=zoom,
                         valid=True)
 ```
+
+- Once that's squared away, just make sure the `Script Filter` action lookds like this:
+![scriptfilter](imgs/scriptfilter.png)
+
+- Then just make the rest of the actions look something like this:
+![actions](imgs/actions.png)
+
 
 And that's it! I really recommend this one, super quick and useful, but also makes me feel much more organized.
