@@ -17,7 +17,7 @@ In this workflow, here's what I wanted to get to quickly for each class:
 2. Its ebook
 3. Its OneNote Page
 4. The class website
-5. the zoom meeting
+5. the zoom meeting (for COVID-19)
 
 I did this by assigning the values for each one to a modifier key as in the following table.
 
