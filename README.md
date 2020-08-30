@@ -2,9 +2,9 @@
 
 # Alfred School Bookmarks
 
-This little workflow was made to quickly and easily get to all the websites, folders, ebooks, zoom meetings  etc. that I need to access many times daily in school. It has turned out to be one of the most useful and highly used out of all my workflows so I wanted to share it, but since everyone is different I figured I would at least post the code and show how easily you could adjust it for yourself.
+This little workflow was made to quickly and easily get to all the websites, folders, ebooks, zoom meetings  etc. that I need frequent access to for school. Although a simple concept, this is probably the most used and appreciated out of all my workflows in that it makes me much more organized. Sharing this workflow, however, is tricky because what I may want access to is not the same as what others would, so I decided (for now) I would post the code and show how easily you could adjust it for yourself.
 
-> Because of this, this repo is more of a demonstration on building an Alfred workflow rather than sharing an executable workflow to be installed.
+> Because of this, this repo is more of a demonstration on building a useful Alfred workflow rather than sharing an executable workflow to be installed (although I may make a shareable version later).
 
 _Here's a screenshot of the workflow itself:_
 
@@ -12,12 +12,12 @@ _Here's a screenshot of the workflow itself:_
 
 
 ## Configuration
-In this workflow, here's what I wanted to get to quickly for each class:
-1. Its folder
-2. Its ebook
-3. Its OneNote Page
+In this workflow, I wanted to have quick access to the following for every class:
+1. The folder on my disk
+2. The ebook
+3. My Microsoft OneNote section
 4. The class website
-5. the zoom meeting (for COVID-19)
+5. The zoom meeting (for COVID-19)
 
 I did this by assigning the values for each one to a modifier key as in the following table.
 
@@ -29,7 +29,13 @@ modifer  |  opens
  <kbd>⌃</kbd> |  zoom meeting
  no modifer |  OneNote section
 
+Since I have 3 classes, I have access to all 15 locations in an instant by using the shortcut key <kbd>⌥</kbd><kbd>⇧</kbd><kbd>;</kbd>, like below.
+
+![screennshot](imgs/modkeys.gif)
+
 So to store the data for each of these paths, I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
+
+> this file is `create semester table.sql`
 
 ```SQL
 -- you can change these columns to whatever
