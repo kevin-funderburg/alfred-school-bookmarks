@@ -2,10 +2,12 @@
 
 # Alfred School Bookmarks
 
-This is a little workflow I made to try and help navigate to all the websites, folders, books etc. that I use constantly throughout a semester. I am posting this as more of a demonstration seeing as what people want as a shortcut will vary for person to person, but if you want to use this is a very easy workflow to adapt.
+This little workflow was made to quickly and easily get to all the websites, folders, ebooks, zoom meetings  etc. that I need to access many times daily in school. It has turned out to be one of the most useful and highly used out of all my workflows so I wanted to share it, but since everyone is different I figured I would at least post the code and show how easily you could adjust it for yourself.
 
-Here's what the workflow looks like itself:
+
 ![](imgs/workflow.png)
+
+> Here's a screenshot of the workflow itself:
 
 ## Configuration
 In this workflow, here's what I wanted to get to quickly for each class:
@@ -15,7 +17,17 @@ In this workflow, here's what I wanted to get to quickly for each class:
 4. The class website
 5. the zoom meeting
 
-So I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
+I did this by assigning the values for each one to a modifier key as in the following table.
+
+modifer  |  opens
+--|--
+ <kbd>⌘</kbd> |  class website
+ <kbd>⌥</kbd> |  class folder
+ <kbd>⇧</kbd> |  ebook
+ <kbd>⌃</kbd> |  zoom meeting
+ no modifer |  OneNote section
+
+So to store the data for each of these paths, I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
 
 ```SQL
 -- you can change these columns to whatever
@@ -61,18 +73,7 @@ INSERT INTO fall2020 VALUES (
 
 ![](imgs/db.png)
 
-After that, it's basic python code, all I did was assign each one of the things I cared about to a modifier key:
-
-modifer  |  opens
---|--
- <kbd>⌘</kbd> |  class website
- <kbd>⌥</kbd> |  browse class folder
- <kbd>⇧</kbd> |  ebook
- <kbd>⌃</kbd> |  zoom meeting
- no modifer |  OneNote section
-
-
-So if you want to adapt this for yourself, adjust the `def execute_sql`function in the `getClassData.py` file for your information. Below points out where to make the change.
+Once the data is stored, you just need to make sure the `def execute_sql`function in the `getClassData.py` file fits your information. Below points out where to make the change.
 
 ```python
 def execute_sql(conn, sql):
@@ -112,3 +113,5 @@ def execute_sql(conn, sql):
                         arg=zoom,
                         valid=True)
 ```
+
+And that's it! I really recommend this one, super quick and useful, but also makes me feel much more organized.
