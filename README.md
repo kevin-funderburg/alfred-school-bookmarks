@@ -29,13 +29,15 @@ modifer  |  opens
  <kbd>⌃</kbd> |  zoom meeting
  no modifer |  OneNote section
 
-Since I have 3 classes, I have access to all 15 locations in an instant by using the shortcut key <kbd>⌥</kbd><kbd>⇧</kbd><kbd>;</kbd>, like below.
+- Since I have 3 classes, I have access to all 15 locations in an instant by using the shortcut key <kbd>⌥</kbd><kbd>⇧</kbd><kbd>;</kbd>
+- I added links to my personal and university github profiles for more convenience
 
 ![screennshot](imgs/modkeys.gif)
 
-So to store the data for each of these paths, I created a small SQlite database called `classdata.db` to store the data for each class using the following SQL command (with some privacy stuff changed):
+### Storing the Data
+So to store the data for each of these paths, I created a small SQlite database called `classdata.db` and used the following command (with some stuff changed for privacy) to create a `fall2020` table to store the data for each class.
 
-> this file is `create semester table.sql`
+> this is the contents of the file `create semester table.sql`
 
 ```SQL
 -- you can change these columns to whatever
@@ -81,6 +83,7 @@ INSERT INTO fall2020 VALUES (
 
 ![db](imgs/db.png)
 
+### Update The Code
 Once the data is stored, you just need to make sure the `def execute_sql`function in the `getClassData.py` file fits your information. Below points out where to make the change.
 
 ```python
@@ -122,7 +125,7 @@ def execute_sql(conn, sql):
                         valid=True)
 ```
 
-- Once that's squared away, just make sure the `Script Filter` action lookds like this:
+- Once that's squared away, just make sure the `Script Filter` action looks like this:
 ![scriptfilter](imgs/scriptfilter.png)
 
 - Then just make the rest of the actions look something like this:
