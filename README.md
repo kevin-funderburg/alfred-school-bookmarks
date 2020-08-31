@@ -130,8 +130,7 @@ def execute_sql(conn, sql):
 
 - Then just make the rest of the actions look something like this:
 
-    <p align="center">
-    <p><img src="imgs/actions.png" height="500"</p>
-    </p>
+
+<p align="center"> <img src="imgs/actions.png" height="500"</p>
 
 And that's it! I really recommend this one, super quick and useful, but also makes me feel much more organized.
