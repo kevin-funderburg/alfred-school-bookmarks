@@ -129,7 +129,9 @@ def execute_sql(conn, sql):
 ![scriptfilter](imgs/scriptfilter.png)
 
 - Then just make the rest of the actions look something like this:
-![actions](imgs/actions.png)
 
+    <p align="center">
+    <p><img src="imgs/actions.png" height="500"</p>
+    </p>
 
 And that's it! I really recommend this one, super quick and useful, but also makes me feel much more organized.
