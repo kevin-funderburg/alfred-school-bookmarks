@@ -227,29 +227,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EAE32386-9C8F-447B-8D5A-012FBA39E608</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EBB37C06-CDF7-4672-8F78-9B7460894670</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>0F14F196-9AF9-4ECE-8B4A-03CB3F00209A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>EB1B5FA1-F20E-418D-AB1F-6E32C386CFF5</key>
 		<array>
 			<dict>
@@ -317,35 +294,6 @@
 			<string>EB1B5FA1-F20E-418D-AB1F-6E32C386CFF5</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>EAE32386-9C8F-447B-8D5A-012FBA39E608</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -756,13 +704,6 @@ on alfred_script(q)
 			<integer>790</integer>
 			<key>ypos</key>
 			<integer>160</integer>
-		</dict>
-		<key>EAE32386-9C8F-447B-8D5A-012FBA39E608</key>
-		<dict>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>65</integer>
 		</dict>
 		<key>EB1B5FA1-F20E-418D-AB1F-6E32C386CFF5</key>
 		<dict>

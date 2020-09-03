@@ -7,75 +7,75 @@ import sys
 
 import sqlite3
 from sqlite3 import Error
-
 from workflow import Workflow3, ICON_INFO, ICON_WARNING, ICON_ERROR
 
 
 def main(wf):
 
+    github_school = "https://git.txstate.edu"
+    github_personal = "https://github.com/kevin-funderburg"
+    github_icon = "icons/Icon-elusive-github@2x.png"
     database = r"classdata.db"
     sql = "SELECT * FROM fall2020;"
 
     # create a database connection
     conn = create_connection(database)
     with conn:
-        execute_sql(conn, sql)
+        # execute_sql(conn, sql)
+        cur = conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
 
-    it = wf.add_item(uid="https://git.txstate.edu",
+        for row in rows:
+            name = row[0]
+            folderPath = row[1]
+            bookPath = row[2]
+            oneNote = row[3]
+            website = row[4]
+            zoom = row[5]
+            it = wf.add_item(uid=name,
+                             title=name,
+                             subtitle="open OneNote section",
+                             arg=oneNote,
+                             autocomplete=name,
+                             valid=True,
+                             icon="icon.png",
+                             icontype="file")
+            it.add_modifier('cmd',
+                            subtitle="go to class website: " + website,
+                            arg=website,
+                            valid=True)
+            it.add_modifier('alt',
+                            subtitle="browse in Alfred",
+                            arg=folderPath,
+                            valid=True)
+            it.add_modifier('shift',
+                            subtitle=bookPath,
+                            arg=bookPath,
+                            valid=True)
+            it.add_modifier('ctrl',
+                            subtitle="go to zoom meeting",
+                            arg=zoom,
+                            valid=True)
+
+
+    it = wf.add_item(uid=github_school,
                      title="github - texas state",
-                     subtitle="https://git.txstate.edu",
-                     arg="https://git.txstate.edu",
+                     subtitle=github_school,
+                     arg=github_school,
                      valid=True,
-                     icon="icons/Icon-elusive-github@2x.png",
+                     icon=github_icon,
                      icontype="file")
 
-    it = wf.add_item(uid="https://github.com/kevin-funderburg",
+    it = wf.add_item(uid=github_personal,
                      title="github - personal",
-                     subtitle="https://github.com/kevin-funderburg",
-                     arg="https://github.com/kevin-funderburg",
+                     subtitle=github_personal,
+                     arg=github_personal,
                      valid=True,
-                     icon="icons/Icon-elusive-github@2x.png",
+                     icon=github_icon,
                      icontype="file")
 
     wf.send_feedback()
-
-
-def execute_sql(conn, sql):
-    log.info("query: " + sql)
-    cur = conn.cursor()
-    cur.execute(sql)
-    rows = cur.fetchall()
-    for row in rows:
-        name = row[0]
-        folderPath = row[1]
-        bookPath = row[2]
-        oneNote = row[3]
-        website = row[4]
-        zoom = row[5]
-        it = wf.add_item(uid=name,
-                         title=name,
-                         subtitle="open OneNote section",
-                         arg=oneNote,
-                         autocomplete=name,
-                         valid=True,
-                         icon="icon.png",
-                         icontype="file")
-        it.add_modifier('cmd',
-                        subtitle="go to class website: " + website,
-                        arg=website,
-                        valid=True)
-        it.add_modifier('alt',
-                        subtitle="browse in Alfred",
-                        arg=folderPath,
-                        valid=True)
-        it.add_modifier('shift',
-                        subtitle=bookPath,
-                        arg=bookPath,
-                        valid=True)
-        it.add_modifier('ctrl',
-                        subtitle="go to zoom meeting",
-                        arg=zoom,
-                        valid=True)
 
 
 def create_connection(db_file):
